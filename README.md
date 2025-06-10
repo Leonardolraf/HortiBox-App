@@ -4,7 +4,6 @@ Sistema de gerenciamento para hortifrúti com frontend em React + Tailwind e bac
 
 #
 # Integrantes do grupo:
-- Leonardo Louzada de Melo - UC23100791
 - Leonardo Rodrigues Amorim Filho - UC23101012
 - Mario Eduardo Pereira de Sousa - UC23101279
 - Matheus Figueiredo Silva - UC23100843
