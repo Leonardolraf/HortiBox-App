@@ -1,0 +1,61 @@
+@baseUrl = http://localhost:3000
+
+###
+# ===================
+# FLUXO DE PRODUTOS
+# ===================
+###
+
+# @name listAllProducts
+# 🟢 Lista todos os produtos disponíveis
+GET {{baseUrl}}/products
+
+###
+
+# @name findOneProduct
+# 🔎 Busca um produto pelo ID
+# (Substitua o ID por um válido do banco)
+GET {{baseUrl}}/products/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+###
+
+# @name findProductsBySupplier
+# 🏢 Busca produtos de um fornecedor específico
+# (Substitua pelo ID de um fornecedor válido)
+GET {{baseUrl}}/products/supplier/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+###
+
+# @name createProduct
+# ➕ Cria um novo produto
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Abacaxi Pérola (API)",
+  "description": "Doce e sem acidez",
+  "price": 10.50,
+  "category": "frutas",
+  "stock_quantity": 80,
+  "unit": "unidade",
+  "supplier_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+}
+
+###
+
+# @name updateProduct
+# 🛠️ Atualiza dados de um produto existente
+# (Envie apenas os campos que deseja alterar)
+PATCH {{baseUrl}}/products/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Content-Type: application/json
+
+{
+  "price": 11.25,
+  "stock_quantity": 75
+}
+
+###
+
+# @name deleteProduct
+# ❌ Deleta um produto pelo ID
+DELETE {{baseUrl}}/products/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
