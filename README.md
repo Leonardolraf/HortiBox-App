@@ -48,8 +48,8 @@ hortibox-app-1/
 ### 1. Clonar o Repositório
 
 ```bash
-git clone <url-do-repositorio>
-cd hortibox-app-1
+git clone https://github.com/Leonardolraf/HortiBox-App
+cd hortibox-app
 ```
 
 ---
